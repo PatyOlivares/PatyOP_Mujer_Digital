@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar-brand {
+    display: flex;
+    align-items: center ;
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+.navbar-brand span {
+    font-size: 25px; /* Ajusta el tamaño del texto "Studio" */
+}
+.navbar-brand {
+    font-size: 25px; /* Ajusta el tamaño del texto "Ghibli" */
+}
+
+#menu a {
+    font-family: "Monserrat", sans-serif; /*cambiando el tipo de letra */ 
+    font-weight: bold;
+    
+
+}
+
+.nav-item .nav-link {
+    color: black;
+}
+
+.nav-item  .dropdown-menu .dropdown-item {
+    color: rgb(121, 120, 128);
+}
+/* el maximo de nuestras imagenes en el ancho */
+
+.studio img{
+    width: 500px;
+    height: 400px;
+    border-radius: 5%;
+}
+p {
+    margin: 15px;
+}
+/*alinear el texto */
+.centered-justify {
+    margin: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.historia img {
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+
+
+}
+.conteiner {
+    margin: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.conteiner img {
+    width: 450px;
+    height: 350px;
+}
