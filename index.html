@@ -37,29 +37,28 @@
             <a class="nav-link active" aria-current="page" href="#historia"> Historia</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#obras" id="" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Obras Populares
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">La tumba de las luciérnagas</a></li>
-              <li><a class="dropdown-item" href="#">Mi vecino Totoro </a></li>
-              <li><a class="dropdown-item" href="#">El castillo ambulante </a></li>
-              <li><a class="dropdown-item" href="#">La princesa Mononoke </a></li>
-              <li> <a class="dropdown-menu" href="#">El viaje de Chihiro</a></li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#luci">La tumba de las luciérnagas</a></li>
+              <li><a class="dropdown-item" href="#totoro">Mi vecino Totoro </a></li>
+              <li><a class="dropdown-item" href="#castillo">El castillo ambulante </a></li>
+              <li><a class="dropdown-item" href="#mononoke">La princesa Mononoke </a></li>
+              <li> <a class="dropdown-menu" href="#chihiro">El viaje de Chihiro</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown"> <!-- añadimos dropdown para que se abra la lista-->
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#lugares" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Lugares Tematicos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Museo de Studio Ghibli</a></li>
-              <li><a class="dropdown-item" href="#">Dogo Onsen, Viajes de Chihiro </a></li>
-              <li><a class="dropdown-item" href="#">Bosque de Totoro </a></li>
-              <li><a class="dropdown-item" href="#">Yakushima, el bosque de la "Princesa Mononoke" </a></li>
-              <li> <a class="dropdown-menu" href="#">Ghibli Park</a></li>
+              <li><a class="dropdown-item" href="#museo">Museo de Studio Ghibli</a></li>
+              <li><a class="dropdown-item" href="#dogo">Dogo Onsen, Viajes de Chihiro </a></li>
+              <li><a class="dropdown-item" href="#bosque">Bosque de Totoro </a></li>
+              <li><a class="dropdown-item" href="#yakushima">Yakushima, el bosque de la "Princesa Mononoke </a></li>
+              <li> <a class="dropdown-menu" href="#park">Ghibli Park</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -127,6 +126,19 @@
     </button>
     <hr />
   </div>
+
+  <figure class="mx-auto text-center m-5">
+    <blockquote class="blockquote">
+      <p>
+        <h2>
+          "No hay ganadores ni perdedores en la vida, solo hay experiencias y aprendizajes.""
+        </h2>
+      </p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        <cite title="Título fuente"><h3>Hayao Miyazaki</h3></cite>
+    </figcaption>
+  </figure>
   <!--CREANDO EL CONTENIDO -->
   <div>
     <section class="studio" id="studio">
@@ -134,7 +146,7 @@
         <h3 class="display-5 text-center my-5"> ¿Que es Studio Ghibli?</h3>
         <img src="./imag4.png" class="img-fluid mx-auto d-block" alt="StudioGhibli">
         <!--mx auto d-block centra la imagen-->
-        <div class="text-conteiner">
+        <div class="text-container">
           <div class="col-12">
             <p>
             <h5>
@@ -166,7 +178,7 @@
     <section class="historia" id="historia">
       <div class="centered-justify">
         <h3 class="display-5 text-center my-5"> Historia de Studio Ghibli</h3>
-        <img src="./historia.jpg" alt="fundadores Ghibli">
+        <img src="./historia.jpg" alt="fundadores Ghibli" class="img-fluid mx-auto d-block">
         <div class=" text-container">
           <div class="col-12">
             <p>
@@ -198,20 +210,23 @@
       <hr />
     </section>
 
-    <section>
-      <h3 class="display-5 text-center my-5"> Obras Populares</h3>
-      <div class="conteiner">
+    <div>
+      <h3 class="display-5 text-center my-5"> Obras Populares </h3>
+
+    </div>
+    <section class="luci" id="luci">
+      <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class=" col-12 col-md-6">
             <p>
-              <h4 class="display-6 text-center fst-italic " >
-                La tumba de las luciérnagas
-              </h4>
+            <h4 class="display-6 text-center fst-italic ">
+              La tumba de las luciérnagas
+            </h4>
             </p>
             <p>
-              <h5>
-                Sinopsis:
-              </h5>
+            <h5>
+              Sinopsis:
+            </h5>
             </p>
             <p>
             <h5>
@@ -224,9 +239,273 @@
             </h5>
             </p>
           </div>
-          <div class="col-6">
-            <img class="ima-fluid" src="./la tumba.jpg" alt="la tumba de las luciernagas">
+          <div class="col-12 col-md-6">
+            <img class="ima-fluid" src="./la tumba.jpg" alt="la tumba de las luciernagas"
+              class="img-fluid mx-auto d-block">
           </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="totoro" id="totoro">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 ">
+            <img src="./totoro.jpg" alt="Mi Vecino Totoro" class="img-fluid mx-auto d-block">
+          </div>
+          <div class="col-12 col-md-6">
+            <p>
+            <h4 class="display-6 text-center fst-italic">
+              Mi vecino Totoro
+            </h4>
+            </p>
+            <p>
+            <h5>
+              Cuenta la historia de dos niñas, Satsuki y Mei, que se mudan con su padre a una casa que
+              se encuentra cerca del bosque, mientras su madre está recuperándose de tuberculosis en un sanatorio rural,
+              al llegar a su nuevo hogar descubren a unas criaturas llamadas "conejos de polvo o duendes del ojin”. Un
+              día Mei, mientras cortaba flores, se encuentra con dos pequeños seres que la llevarán directo a Totoro o
+              como su padre lo llama, él 'Rey del bosque', sin embargo, solamente las personas de corazón puro son las
+              que pueden verlas.
+            </h5>
+            </p>
+            <p>
+            <h5>
+              Conforme pasa el tiempo los encuentros con el rey del bosque se hacen más frecuentes, pero un día llega
+              una carta de parte del sanatorio por lo que Satsuki sale corriendo, y debido a los problemas que se han
+              suscitado, Mei se va de la casa por lo que su hermana va a buscarla, pero al no encontrarla recurrirá a
+              pedir ayuda a Totoro para hacer que regrese sana y salva.
+            </h5>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="castillo" id="castillo">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p>
+            <h4 class="display-6 text-center fst-italic">
+              El castillo ambulante
+            </h4>
+            </p>
+            <p>
+            <h5>
+              Se basa en la novela homónima de la escritora británica Diana Wynne Jones.Howl no Ugoku Shiro contiene
+              temas relacionados con el pacifismo. Miyazaki afirmó que «tenía mucha rabia sobre la guerra de Irak», lo
+              que le llevó a realizar una película que él consideraba que sería mal recibida en Estados Unidos.
+              También explora otros temas tales como el feminismo, la importancia de la compasión y la vejez,
+              representándose como algo positivo al otorgar libertad a la protagonista.
+            </h5>
+
+            </p>
+            <p>
+            <h5>
+              La trama gira en torno a Sophie, una muchacha de 18 años trabaja en la tienda de sombreros que le heredó
+              su padre fallecido. Ella tiene un carácter solitario y le cuesta trabajo relacionarse con la gente. Su
+              vida cambia cuando conoce al enigmático hechicero Howl, lo cual provoca los celos de la Bruja Calamidad,
+              por lo que le lanza un hechizo que la transforma en una anciana de 90 años. Por esto, Sophie busca al
+              Castillo Vagabundo, hogar del joven mago, para revertir el hechizo.
+            </h5>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="./castillo.jpg" alt="El Castillo Vagabundo" class="img-fluid mx-auto d-block">
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="mononoke" id="mononoke">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="./mononoke.jpg" alt="Princesa Mononoke" class="img-fluid mx-auto d-block">
+          </div>
+          <div class="col-12 col-md-6">
+            <p>
+            <h4 class="display-6 text-center fst-italic"> La Princesa Mononoke</h4>
+            </p>
+            <p>
+            <h5>
+              la historia comienza con Ashitaka, el último príncipe emishi. Ashitaka es forzado a dejar su aldea para
+              emprender una búsqueda y así conseguir romper una maldición. En su camino, Ashitaka se encuentra con San,
+              la princesa de los lobos (o bien, la princesa Mononoke, el cual no es un nombre tal cual, significa
+              espíritu vengador en japonés). San se ve directamente envuelta en esta lucha entre la humanidad y la
+              naturaleza, y consecuentemente Ashitaka es involucrado también.
+            </h5>
+            </p>
+            <p>
+            <h5>
+              El mensaje detrás de la guerra es más que una lección moral. Es decir, Miyazaki no se queda en un sencillo
+              “la humanidad es mala y por eso nos vamos a morir”, sino que explora la complejidad en la que se encuentra
+              el ser humano y cómo se le ha orillado a intervenir con la naturaleza. Por otro lado, no se nos muestra a
+              una “madre naturaleza bondadosa y amable” que únicamente quiere sobrevivir, sino que vemos al bosque
+              luchar por su existencia con agresividad, hartazgo y desesperación.
+            </h5>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <div class="lugares" id="lugares">
+      <h3 class="display-5 text-center my-5 "> Lugares Tematicos </h3>
+      <p>
+      <h5 class="centered-justify fst-italic text-secondary">
+        El Estudio Ghibli, y especialmente las obras de Hayao Miyazaki, tienen un creciente número de fans en todo el
+        mundo. Una prueba de esto es que las entradas para el Museo Ghibli en Mitaka se agotan a las pocas horas de ser
+        liberadas. Algunas personas no saben que el museo no es el único lugar que puedes visitar si estás enamorado de
+        los personajes y las películas de Ghibli. Lugares de todo Japón han inspirado y recreado el arte de Hayao
+        Miyazaki.
+      </h5>
+      </p>
+    </div>
+    <section class="museo" id="museo">
+      <div class="centered-justify">
+        <div>
+          <p>
+          <h4 class="fw-bold">
+            1. Museo Ghibli en Tokio
+          </h4>
+          </p>
+        </div>
+        <div>
+          <img src="./Museo-Ghibli-Tokio.jpg" alt="Museo Ghibli Tokio " class="img-fluid mx-auto d-block">
+        </div>
+        <div class="centered-justify">
+          <div class="text-container">
+            <p>
+            <h5>
+              Museo de Studio Ghibli en Mitaka, Tokio. Ubicándose dentro del Parque Inokashira, aquí los visitantes
+              podrán
+              sumergirse en el mágico mundo de Ghibli y ver exhibiciones inspiradoras, como los bocetos originales del
+              animador fundador Hayao Miyazaki. Pasear por el museo en sí mismo es muy divertido, con cada esquina llena
+              de detalles y cosas intrigantes para descubrir, siendo cada área basada en una película animada de Ghibli.
+              Un área conmovedora apunta a recrear el escenario del estudio del animador Miyazaki, lleno de cuadernos de
+              dibujo, fotogramas de animación, ceniceros y cajas llenas de cortos restos de lápices -reflejando el
+              respeto por el medioambiente y el deseo de reducir los residuos de Miyazaki.
+            </h5>
+            </p>
+            <p>
+            <h5>
+              Si bien el museo es muy entretenido para fans adultos, es aún más divertido para los más jóvenes que
+              pueden encontrarse con el Neko Bus gigante en el área de juego diseñada exclusivamente para ellos. No
+              olvides de tomarte varias fotos para el recuerdo con el Totoro gigante ubicado fuera junto a la Avenida
+              Kichijoji, o con el imponente robot de Laputa en el techo. Cuando finalices visitando el museo y la tienda
+              de souvenirs Mamma Aiuto, dirígete al Straw Hat Café en la planta baja para tomar algún refresco. El museo
+              del Studio Ghibli es popular entre visitantes frecuentes que regresan allí porque, tanto las exhibiciones
+              especiales como los cortos animados originales reproducidos en el propio cine interior Saturn Theatre, se
+              van rotando por temporadas y son producidos exclusivamente para el museo. Por lo tanto, se recomienda
+              reservar las entradas con anticipación y dedicar suficiente tiempo para la visita al museo, ya que tiende
+              a llenarse de gente.
+            </h5>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dogo" id="dogo">
+      <div class="centered-justify">
+        <div>
+          <p>
+          <h4 class="fw-bold"> 2.Dogo Onsen, Viajes de Chihiro </h4>
+          </p>
+        </div>
+        <div>
+          <img src="./dogo-onsen.jpg" alt="Dogo Onsen" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="text-container">
+          <p>
+          <h5>
+            De los varios lugares que han sido de inspiración del icónico Arburaya, o la casa de baños en El Viaje de
+            Chihiro, Dogo Onsen en la ciudad de Matsuyama, prefectura de Ehime, es uno de ellos. Distinguido por ser uno
+            de los onsen más viejos de Japón, la leyenda cuenta que Dogo Onsen fue descubierto cuando los locales
+            notaron que se había curado la pierna lesionada de una garza blanca al introducirla en las aguas termales.
+            Al ver la fachada majestuosa del Honkan, el edificio principal de la casa de baños, se hace evidente cómo
+            Miyazaki quedó asombrado por el complejo de la construcción. El Honkan ha estado en funcionamiento desde
+            1894 y sigue prosperando al día de hoy con la multitud de turistas que acuden al lugar para darse un baño
+            relajante o para experimentar la magia de Ghibli.
+          </h5>
+          </p>
+          <p>
+          <h5>
+            Otros sitios que han inspirado el Arburaya en El Viaje de Chihiro incluyen el lujoso e histórico Meguro
+            Gajoen, el Museo Arquitectónico al Aire Libre Edo-Tokio, el Castillo Nijo, el Santuario Toshogu de Nikko y
+            las casas de té de Jiufen, Taiwan. Muchos otros lugares japoneses de onsen, como Sekizenkan en Shima Onsen
+            de Gunma, o Kanaguya en Shibu Onsen de Nagano, también fueron de ayuda para inspirar el diseño final.
+          </h5>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bosque" id="bosque">
+      <div class="centered-justify">
+        <div>
+          <p>
+          <h4 class="fw-bold">
+            3. Bosque de Totoro
+          </h4>
+          </p>
+        </div>
+        <div>
+          <img src="./bosque totoro.jpg" alt="Bosque Kaminoyama" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="text-container">
+          <p>
+          <h5>
+            El bosque de Totoro existe en la vida real y se conoce como el bosque de Kaminoyama, lugar que muy pronto
+            se convertirá en una reserva natural y, actualmente, se encuentra cerca del lugar en el que vive el director
+            de Studio Ghibli, Hayao Miyazaki.
+          </h5>
+          </p>
+          <p>
+          <h5>
+            Fue durante sus paseos por el área de Kaminoyama cuando Miyazaki encontró la inspiración. Observó el lugar y
+            sintió una gran conexión. Esta no acabó simplemente con el lanzamiento de ‘Mi Vecino Totoro’ en el año 1988,
+            sino que incluso antes de la película, Miyazaki quedó prendido de este lugar. Tanto, que decidió vivir en la
+            ciudad de Tokorozawa en el año 1970, lugar próximo al área en la que se encuentra el bosque.
+          </h5>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="yakushima" id="yakushima">
+      <div class="centered-justify ">
+        <div>
+          <p>
+          <h4 class="fw-bold">
+            4. Yakushima, el bosque de la "Princesa Mononoke
+          </h4>
+          </p>
+        </div>
+        <div>
+          <img src="./YakushimaPortada_1.jpg" alt="Yakushima" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="text-container">
+          <p>
+          <h5>
+            La isla de Yakushima, zona de la prefectura de Kagoshima, al sur de Kyushu. Este lugar está cubierto por un
+            frondoso bosque que,como se puede ver en las imágenes, es evidente que sirvió de inspiración al cineasta
+            Hayao Miyazaki tras visitarla varias veces.
+          </h5>
+          </p>
+          <p>
+          <h5>
+            La isla fue declarada Patrimonio de la Humanidad por la UNESCO en 1993. Además, la mayor parte de la zona se
+            encuentra bajo la protección del departamento forestal para conservar su naturaleza ya que recibe una gran
+            afluencia de turistas. De hecho se organizan numerosas excursiones al lugar más importante y bonito de
+            Yakushima, el centro del bosque, donde se encuentra el famoso Barranco de Shiratani Unsui.
+
+          </h5>
+          </p>
+
         </div>
       </div>
     </section>
