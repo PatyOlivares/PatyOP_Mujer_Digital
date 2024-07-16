@@ -17,7 +17,7 @@
     <!--Creando el logo con la marca ene ste caso Studio Ghibli-->
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./studio-ghibli-logo.svg" alt="logo" width="180" height="80" class="d-inline-block align-text-top">
+        <img src="./studio-ghibli-logo.svg" alt="logo"  >
       </a>
       <!-- Boton del menu-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -28,9 +28,12 @@
       <!-- Elementos del Menu colapsable -->
       <div class="collapse navbar-collapse" id="menu">
         <!-- Los elementos del menu que se abriran al usar el boton estaran en este div-->
-        <ul class="navbar-nav ms-5 ">
+        <ul class="navbar-nav  ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#studio"> ¿StudioGhibli? </a>
+            <a class="nav-link active" aria-current="page" href="#quiz"> Personaje con tu signo </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#studio"> StudioGhibli </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#historia"> Historia</a>
@@ -44,9 +47,14 @@
               <li><a class="dropdown-item" href="#totoro">Mi vecino Totoro </a></li>
               <li><a class="dropdown-item" href="#castillo">El castillo ambulante </a></li>
               <li><a class="dropdown-item" href="#mononoke">La princesa Mononoke </a></li>
-              <li> <a class="dropdown-menu" href="#chihiro">El viaje de Chihiro</a></li>
+              <li> <a class="dropdown-item" href="#chihiro">El viaje de Chihiro</a></li>
             </ul>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#recomendaciones"> Recomendaciones</a>
+          </li>
+
           <li class="nav-item dropdown"> <!-- añadimos dropdown para que se abra la lista-->
             <a class="nav-link dropdown-toggle" href="#lugares" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,10 +65,10 @@
               <li><a class="dropdown-item" href="#dogo">Dogo Onsen, Viajes de Chihiro </a></li>
               <li><a class="dropdown-item" href="#bosque">Bosque de Totoro </a></li>
               <li><a class="dropdown-item" href="#yakushima">Yakushima, el bosque de la "Princesa Mononoke </a></li>
-              <li> <a class="dropdown-menu" href="#park">Ghibli Park</a></li>
+              <li><a class="dropdown-item" href="#mapa"> Mapa de Ubicaciones </a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Soundtrack Studio Ghibli
             </a>
@@ -68,9 +76,9 @@
               <li><a class="dropdown-item" href="https://youtu.be/kOcuaWEuXz0?si=_MfQhJTHIi8LSMgx">Studio Ghibli Music
                   Collection</a></li>
               <li><a class="dropdown-item" href="https://youtu.be/IbRkwS_xRt8?si=B3zeAeOhSQc9tsDt">Joe Hisaishi in
-                  Budokan - Studio Ghibli (LIVE) </a></li>
-            </ul>
-          </li>
+                  Budokan - Studio Ghibli (LIVE) </a></li> -->
+        </ul>
+        </li>
         </ul>
         <hr class="text-dark-50"> <!-- linea para separar el menu al momento de colapsar-->
       </div>
@@ -84,10 +92,8 @@
       </p>
       <p>
       <h2 class="display-6 ">
-        En esta página, te invitamos a explorar el mágico mundo de Studio Ghibli, el aclamado estudio de animación
-        japonés que ha capturado los corazones de espectadores de todas las edades con sus encantadoras historias y
-        maravillosas películas. Fundado en 1985 por Hayao Miyazaki y Isao Takahata, Studio Ghibli ha creado un legado
-        inolvidable en la industria del cine de animación.
+        Explora el mágico mundo de Studio Ghibli, el famoso estudio japonés fundado en 1985 por Hayao Miyazaki y Isao
+        Takahata, conocido por sus encantadoras historias y maravillosas películas.
       </h2>
       </p>
     </blockquote>
@@ -104,25 +110,25 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" class="classeimg">
-        <img src="./imag0.gif " class="d-block w-100" alt="La tumba de las luciérnagas" height="600">
+        <img src="./central_imag/imag0.gif " class="d-block w-100" alt="La tumba de las luciérnagas" height="600">
         <div class="carousel-caption d-none d-md-block">
           <h4> La tumba de las luciérnagas </h4>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./imag1.gif" class="d-block w-100" alt="El castillo ambulante" height="600">
+        <img src="./central_imag/imag1.gif" class="d-block w-100" alt="El castillo ambulante" height="600">
         <div class="carousel-caption d-none d-md-block">
           <h4> El castillo Ambulante </h4>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./imag2.gif" class="d-block w-100" alt="El viaje de Chihiro" height="600">
+        <img src="./central_imag/imag2.gif" class="d-block w-100" alt="El viaje de Chihiro" height="600">
         <div class="carousel-caption d-none d-md-block text-dark">
           <h4> El viaje de Chihiro</h4>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./imag3.gif" class="d-block w-100" alt="La Princesa Mononoke" height="600">
+        <img src="./central_imag/imag3.gif" class="d-block w-100" alt="La Princesa Mononoke" height="600">
         <div class="carousel-caption d-none d-md-block text-dark">
           <h4> La princesa Mononoke</h4>
         </div>
@@ -154,12 +160,48 @@
       </cite>
     </figcaption>
   </figure>
+  <hr />
+  <!--Creando el qizz del signo zodiacal-->
+  <section class=" quiz centered-justify text-center  " id="quiz">
+    <div>
+      <h2><b>Descubre tu personaje de Studio Ghibli</b> </h2>
+      <h3>Te has preguntado qué personaje de Studio Ghibli refleja mejor tu personalidad? Selecciona tu signo zodiacal y
+        descubre quién eres en el mágico mundo de Ghibli.</h3>
+    </div>
+    <form action="formu">
+      <legend> ¿Que signo zodiacal Eres?</legend>
+      <select name="zodiaco" id="zoo">
+        <option value="sing"> Selecciona tu signo</option>
+        <option value="aries">Aries</option>
+        <option value="tauro">Tauro</option>
+        <option value="geminis">Géminis</option>
+        <option value="cancer">Cáncer</option>
+        <option value="leo">Leo</option>
+        <option value="virgo">Virgo</option>
+        <option value="libra">Libra</option>
+        <option value="escorpio">Escorpio</option>
+        <option value="sagitario">Sagitario</option>
+        <option value="capricornio">Capricornio</option>
+        <option value="acuario">Acuario</option>
+        <option value="piscis">Piscis</option>
+      </select>
+      <!--creando los botones para saber que personaje eres-->
+      <input value="Obtener Personaje" type="button" id="submit">
+      <!--Creaccion de boton para reiniciar el formulario-->
+      <!--Se utilizo type="reset" para reestablecer SOLO las opciones la imagen se hizo apartir de una funcion-->
+      <input type="reset" value="Reestablecer" id="reset">
+      <br>
+      <br>
+      <img class="img-fluid mx-auto d-block" id="imagenes" src="./zodiaco_imag/signos.jpg" alt="">
+    </form>
+  </section>
+  <hr />
   <!--CREANDO EL CONTENIDO -->
   <div>
     <section class="studio" id="studio">
       <div class="centered-justify">
         <h3 class="display-5 text-center my-5"> ¿Que es Studio Ghibli?</h3>
-        <img src="./imag4.png" class="img-fluid mx-auto d-block" alt="StudioGhibli">
+        <img src="./central_imag/imag4.png " class="img-fluid mx-auto d-block" alt="StudioGhibli">
         <!--mx auto d-block centra la imagen-->
         <div class="text-container">
           <div class="col-12">
@@ -193,32 +235,29 @@
     <section class="historia" id="historia">
       <div class="centered-justify">
         <h3 class="display-5 text-center my-5"> Historia de Studio Ghibli</h3>
-        <img src="./historia.jpg" alt="fundadores Ghibli" class="img-fluid mx-auto d-block">
+        <img src="./central_imag/historia.jpg" alt="fundadores Ghibli" class="img-fluid mx-auto d-block">
         <div class=" text-container">
           <div class="col-12">
-            <p>
             <h5>
               Fue fundada en junio de 1985 por Hayao Miyazaki e Isao Takahata, quienes serían los primeros
               directores; y Toshio Suzuki, que actuaria de productor y presidente de la compañía.</h5>
-            </p>
-            <p>
             <h5>
               El estudio fue resultado del éxito que alcanzó la película de "Nausicaä del Valle del Viento", de 1984,
               dirigida por Hayao Miyazaki para Topcraft y distribuida por Toei Animation. Suzuki fue parte de la
               producción de esta película. Tras la realización de Mi vecino Totoro, uno de sus personajes, Totoro,
               pasó a ser el logotipo de la compañía en 1988.
             </h5>
-            </p>
-            <p>
-            <h5>
-              La compañía es conocida por su estricta política de «no cambios» en sus productos en el extranjeros.
-              Esto se debe por la primera edición internacional de Nausicaä del Valle del Viento, la cual al llegar a
-              América, fue cortada y reescrita, e incluso su título paso a ser Guerreros del viento, para que fuera
-              más comercial. Con el fin de que no volviera a ocurrir, cuando el co-presidente de Miramax, Harvey
-              Weinstein, sugirió recortar la película La princesa Mononoke, Toshio Suzuki, le envió una katana
-              auténtica con una simple nota: «Sin cortes»
-            </h5>
-            </p>
+            <span class="oculto" id="oculto_texto_0">
+              <h5>
+                La compañía es conocida por su estricta política de «no cambios» en sus productos en el extranjeros.
+                Esto se debe por la primera edición internacional de Nausicaä del Valle del Viento, la cual al llegar a
+                América, fue cortada y reescrita, e incluso su título paso a ser Guerreros del viento, para que fuera
+                más comercial. Con el fin de que no volviera a ocurrir, cuando el co-presidente de Miramax, Harvey
+                Weinstein, sugirió recortar la película La princesa Mononoke, Toshio Suzuki, le envió una katana
+                auténtica con una simple nota: «Sin cortes»
+              </h5>
+            </span>
+            <button class=" btn  readMore_btn  " id="oculto_texto_btn_0"> Ver Mas... </button>
           </div>
         </div>
       </div>
@@ -226,7 +265,19 @@
     </section>
 
     <div>
-      <h3 class="display-5 text-center my-5"> Obras Populares </h3>
+      <h3 class="display-5 text-center my-5"><strong>Obras Populares</strong> </h3>
+      <p>
+        <strong>
+          <h5 class="centered-justify fst-italic text-secondary">
+            Desde 1985, Studio Ghibli ha encantado a todos con historias mágicas y animación impresionante. Sus obras
+            más
+            queridas, como Mi Vecino Totoro, El Viaje de Chihiro y La Princesa Mononoke, nos transportan a mundos de
+            fantasía y reflexión sobre la naturaleza y la humanidad.
+          </h5>
+        </strong>
+      </p>
+      <br>
+      <br>
 
     </div>
     <section class="luci" id="luci">
@@ -235,7 +286,7 @@
           <div class=" col-12 col-md-6">
             <p>
             <h4 class="display-6 text-center fst-italic ">
-              La tumba de las luciérnagas
+              <strong>La tumba de las luciérnagas</strong>
             </h4>
             </p>
             <p>
@@ -247,34 +298,37 @@
             <h5>
               En los últimos días de la Segunda Guerra Mundial, Seita, de 14 años, y su hermana Setsuko, de cuatro años,
               quedan huérfanos después de que su madre es asesinada durante un ataque aéreo por las fuerzas
-              estadounidenses en Kobe, Japón. Después de tener una pelea con su tía, se mudan a un refugio antiaéreo
-              abandonado. Sin familiares sobrevivientes y sus fondos y raciones de emergencia agotados, Seita y Setsuko
-              deben luchar para sobrevivir tanto a sus dificultades como a las de su país, que está en el extremo
-              perdedor de la guerra.
+              estadounidenses en Kobe, Japón.
             </h5>
             </p>
+            <span class="oculto" id="oculto_texto">
+              <h5>Después de tener una pelea con su tía, se mudan a un refugio antiaéreo
+                abandonado. Sin familiares sobrevivientes y sus fondos y raciones de emergencia agotados, Seita y
+                Setsuko
+                deben luchar para sobrevivir tanto a sus dificultades como a las de su país, que está en el extremo
+                perdedor de la guerra.</h5>
+            </span>
+            <button class=" btn  readMore_btn  " id="oculto_texto_btn"> Ver Mas... </button>
           </div>
           <div class="col-12 col-md-6">
-            <img class="ima-fluid" src="./la tumba.jpg" alt="la tumba de las luciernagas"
+            <img class="ima-fluid" src="./central_imag/la tumba.jpg" alt="la tumba de las luciernagas"
               class="img-fluid mx-auto d-block">
           </div>
         </div>
+
       </div>
     </section>
     <hr />
     <section class="totoro" id="totoro">
+      <h4 class="display-6 text-center fst-italic">
+        <strong>Mi vecino Totoro</strong>
+      </h4>
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 ">
-            <img src="./totoro.jpg" alt="Mi Vecino Totoro" class="img-fluid mx-auto d-block">
+            <img src="./central_imag/totoro.jpg" alt="Mi Vecino Totoro" class="img-fluid mx-auto d-block">
           </div>
           <div class="col-12 col-md-6">
-            <p>
-            <h4 class="display-6 text-center fst-italic">
-              Mi vecino Totoro
-            </h4>
-            </p>
-            <p>
             <h5>
               Cuenta la historia de dos niñas, Satsuki y Mei, que se mudan con su padre a una casa que
               se encuentra cerca del bosque, mientras su madre está recuperándose de tuberculosis en un sanatorio rural,
@@ -283,31 +337,27 @@
               como su padre lo llama, él 'Rey del bosque', sin embargo, solamente las personas de corazón puro son las
               que pueden verlas.
             </h5>
-            </p>
-            <p>
-            <h5>
-              Conforme pasa el tiempo los encuentros con el rey del bosque se hacen más frecuentes, pero un día llega
-              una carta de parte del sanatorio por lo que Satsuki sale corriendo, y debido a los problemas que se han
-              suscitado, Mei se va de la casa por lo que su hermana va a buscarla, pero al no encontrarla recurrirá a
-              pedir ayuda a Totoro para hacer que regrese sana y salva.
-            </h5>
-            </p>
-
+            <span class="oculto" id="oculto_texto_2">
+              <h5>
+                Conforme pasa el tiempo los encuentros con el rey del bosque se hacen más frecuentes, pero un día llega
+                una carta de parte del sanatorio por lo que Satsuki sale corriendo, y debido a los problemas que se han
+                suscitado, Mei se va de la casa por lo que su hermana va a buscarla, pero al no encontrarla recurrirá a
+                pedir ayuda a Totoro para hacer que regrese sana y salva.
+              </h5>
+            </span>
+            <button class=" btn  readMore_btn  " id="oculto_texto_btn_2"> Ver Mas... </button>
           </div>
+
         </div>
       </div>
     </section>
     <hr />
     <section class="castillo" id="castillo">
+      <h4 class="display-6 text-center fst-italic "><strong>El castillo ambulante</strong></h4>
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
-            <p>
-            <h4 class="display-6 text-center fst-italic">
-              El castillo ambulante
-            </h4>
-            </p>
-            <p>
+
             <h5>
               Se basa en la novela homónima de la escritora británica Diana Wynne Jones.Howl no Ugoku Shiro contiene
               temas relacionados con el pacifismo. Miyazaki afirmó que «tenía mucha rabia sobre la guerra de Irak», lo
@@ -315,36 +365,32 @@
               También explora otros temas tales como el feminismo, la importancia de la compasión y la vejez,
               representándose como algo positivo al otorgar libertad a la protagonista.
             </h5>
-
-            </p>
-            <p>
-            <h5>
-              La trama gira en torno a Sophie, una muchacha de 18 años trabaja en la tienda de sombreros que le heredó
-              su padre fallecido. Ella tiene un carácter solitario y le cuesta trabajo relacionarse con la gente. Su
-              vida cambia cuando conoce al enigmático hechicero Howl, lo cual provoca los celos de la Bruja Calamidad,
-              por lo que le lanza un hechizo que la transforma en una anciana de 90 años. Por esto, Sophie busca al
-              Castillo Vagabundo, hogar del joven mago, para revertir el hechizo.
-            </h5>
-            </p>
+            <span class="oculto" id="oculto_texto_3">
+              <h5>
+                La trama gira en torno a Sophie, una muchacha de 18 años trabaja en la tienda de sombreros que le heredó
+                su padre fallecido. Ella tiene un carácter solitario y le cuesta trabajo relacionarse con la gente. Su
+                vida cambia cuando conoce al enigmático hechicero Howl, lo cual provoca los celos de la Bruja Calamidad,
+                por lo que le lanza un hechizo que la transforma en una anciana de 90 años. Por esto, Sophie busca al
+                Castillo Vagabundo, hogar del joven mago, para revertir el hechizo.
+              </h5>
+            </span>
+            <button class=" btn  readMore_btn  " id="oculto_texto_btn_3"> Ver Mas... </button>
           </div>
           <div class="col-12 col-md-6">
-            <img src="./castillo.jpg" alt="El Castillo Vagabundo" class="img-fluid mx-auto d-block">
+            <img src="./central_imag/castillo.jpg" alt="El Castillo Vagabundo" class="img-fluid mx-auto d-block">
           </div>
         </div>
       </div>
     </section>
     <hr />
     <section class="mononoke" id="mononoke">
+      <h4 class="display-6 text-center fst-italic"> <strong>La Princesa Mononoke</strong></h4>
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
-            <img src="./mononoke.jpg" alt="Princesa Mononoke" class="img-fluid mx-auto d-block">
+            <img src="./central_imag/mononoke.jpg" alt="Princesa Mononoke" class="img-fluid mx-auto d-block">
           </div>
           <div class="col-12 col-md-6">
-            <p>
-            <h4 class="display-6 text-center fst-italic"> La Princesa Mononoke</h4>
-            </p>
-            <p>
             <h5>
               la historia comienza con Ashitaka, el último príncipe emishi. Ashitaka es forzado a dejar su aldea para
               emprender una búsqueda y así conseguir romper una maldición. En su camino, Ashitaka se encuentra con San,
@@ -352,32 +398,185 @@
               espíritu vengador en japonés). San se ve directamente envuelta en esta lucha entre la humanidad y la
               naturaleza, y consecuentemente Ashitaka es involucrado también.
             </h5>
-            </p>
-            <p>
-            <h5>
-              El mensaje detrás de la guerra es más que una lección moral. Es decir, Miyazaki no se queda en un sencillo
-              “la humanidad es mala y por eso nos vamos a morir”, sino que explora la complejidad en la que se encuentra
-              el ser humano y cómo se le ha orillado a intervenir con la naturaleza. Por otro lado, no se nos muestra a
-              una “madre naturaleza bondadosa y amable” que únicamente quiere sobrevivir, sino que vemos al bosque
-              luchar por su existencia con agresividad, hartazgo y desesperación.
-            </h5>
-            </p>
-
+            <span class="oculto" id="oculto_texto_4">
+              <h5>
+                El mensaje detrás de la guerra es más que una lección moral. Es decir, Miyazaki no se queda en un
+                sencillo
+                “la humanidad es mala y por eso nos vamos a morir”, sino que explora la complejidad en la que se
+                encuentra
+                el ser humano y cómo se le ha orillado a intervenir con la naturaleza. Por otro lado, no se nos muestra
+                a
+                una “madre naturaleza bondadosa y amable” que únicamente quiere sobrevivir, sino que vemos al bosque
+                luchar por su existencia con agresividad, hartazgo y desesperación.
+              </h5>
+            </span>
+            <button class=" btn  readMore_btn  " id="oculto_texto_btn_4"> Ver Mas... </button>
           </div>
         </div>
       </div>
     </section>
     <hr />
+    <section class="chihiro" id="chihiro">
+      <h4 class="display-6 text-center fst-italic"> <strong>El viaje de Chihiro</strong></h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="./central_imag/Chihiro.jpg" alt="Los viajes de Chihiro" class="img-fluid mx-auto d-block">
+          </div>
+          <div class="col-12 col-md-6">
+            <h5>
+              Chihiro es una niña de diez años, algo caprichosa y refunfuñona, que acaba de dejar su ciudad. Con sus
+              padres, está viajando a un nuevo lugar donde establecerse. Durante el viaje los padres de Chihiro deciden
+              parar a descansar y atraviesan un túnel. Desde ahí se desarrolla una historia fantástica donde Chihiro
+              tendrá que luchar contra sus miedos y limitaciones.
+            </h5>
+            <span class="oculto" id="oculto_texto_7">
+              <h5>
+                Para liberar a sus padres de un encantamiento que les
+                puede costar la vida y que les ha convertido en cerdos, la niña se irá encontrando con toda una galería
+                de
+                personajes fantásticos que le ensañaran una serie de valores imprescindibles, no solo para conseguir sus
+                propósitos en el mundo fantástico en el que se ha metido, sino para toda la vida. Chihiro va a descubrir
+                el valor de la amistad, el valor de la reconciliación y el valor de la fe, y esto le va a ayudar a una
+                capacidad de afrontar los retos que se le presentan.
+              </h5>
+            </span>
+            <button class=" btn  readMore_btn  " id="oculto_texto_btn_7"> Ver Mas... </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Parte para realizar un acordeón con películas recomendadas -->
+    <section class="recomendaciones" id="recomendaciones">
+      <h4 class="display-5 text-center fst-italic">
+        <strong>Recomendaciones por Categorías</strong>
+        <p>
+          <strong>
+            <h4 class="centered-justify fst-italic text-secondary display-6 m-5">
+              Explora las películas de Studio Ghibli según su tema central. Cada categoría ofrece aventuras, magia,
+              naturaleza,amistad, superacion y coraje  destacando los mensajes únicos de cada película. <span style="color: black;">¡Descubre tu próxima película
+              favorita!</span>
+            </h4>
+          </strong>
+        </p>
+
+        <div class="acordeon m-3">
+          <div class="acordeon-item">
+            <div class="acordeon-titulo">
+              <span class="acordeon-icono"><ion-icon name="add-circle-outline"></ion-icon></span>
+              <h4 class="display-6 fst-italic"><b>Aventura</b></h4>
+            </div>
+            <div class="acordeon-contenido ">
+              <h4 class="fst-italic"> <b>El viaje de Chihiro (Spirite Away)</b> </h4>
+              <h4>Mensaje: La importancia de la resiliencia y el crecimiento personal en tiempos de adversidad.</h4>
+              <br>
+              <h4 class="fst-italic"><b>Nausicaä del Valle del Viento (Nausicaä of the Valley of the Wind)</b></h4>
+              <h4>Mensaje: La necesidad de armonía y respeto entre la humanidad y la naturaleza.</h4>
+              <br>
+              <h4 class="fst-italic"><b>El castillo en el cielo (Castle in the Sky)</b></h4>
+              <h4>Mensaje: La búsqueda del conocimiento y la lucha por la justicia.</h4>
+            </div>
+          </div>
+          <!-- Siguiente categoría -->
+          <div class="acordeon-item">
+            <div class="acordeon-titulo">
+              <span class="acordeon-icono"><ion-icon name="add-circle-outline"></ion-icon></span>
+              <h4 class="display-6 fst-italic"><b>Magia</b></h4>
+            </div>
+            <div class="acordeon-contenido">
+              <h4 class="fst-italic"><b>El castillo ambulante (Howl's Moving Castle)</b> </h4>
+              <h4>Mensaje: La aceptación de uno mismo y el poder transformador del amor.</h4>
+              <br>
+              <h4 class="fst-italic"><b>Kiki: Entregas a domicilio (Kiki's Delivery Service)</b></h4>
+              <h4>Mensaje: La importancia de la independencia y la confianza en uno mismo.</h4>
+              <br>
+              <h4 class="fst-italic"><b>Ponyo en el acantilado (Ponyo)</b> </h5>
+                <h4>Mensaje: La pureza y la fuerza del amor incondicional.</h4>
+            </div>
+          </div>
+          <!--Siguiente categoria  -->
+          <div class="acordeon-item">
+            <div class="acordeon-titulo">
+              <span class="acordeon-icono"><ion-icon name="add-circle-outline"></ion-icon></span>
+              <h4 class="display-6 fst-italic"><b>Naturaleza</b></h4>
+            </div>
+            <div class="acordeon-contenido">
+              <h4 class="fst-italic""><b>La princesa Mononoke (Princess Mononoke)</b> </h4>
+            <h4>Mensaje: La interconexión y la coexistencia necesaria entre humanos y la naturaleza.</h4>
+            <br>
+            <h4><b>Mi vecino Totoro (My Neighbor Totoro)</b></h4>
+            <h4>Mensaje: La magia de la naturaleza y la importancia de la imaginación infantil.</h4>
+            <br>
+            <h4 class=" fst-italic"><b>Arrietty y el mundo de los diminutos (The Secret World of Arrietty)</b></h5>
+                <h4>Mensaje: La coexistencia pacífica y el respeto por las diferencias.</h4>
+            </div>
+          </div>
+          <div class="acordeon-item">
+            <div class="acordeon-titulo">
+              <span class="acordeon-icono"><ion-icon name="add-circle-outline"></ion-icon></span>
+              <h4 class="display-6 fst-italic"><b>Amistad</b></h4>
+            </div>
+            <div class="acordeon-contenido">
+              <h4 class="fst-italic"><b>Mi vecino Totoro (My Neighbor Totoro)</b> </h4>
+              <h4>Mensaje: La importancia de la amistad y el apoyo mutuo en tiempos difíciles.</h4>
+              <br>
+              <h4 class="fst-italic"> <b>El recuerdo de Marnie (When Marnie Was There)</b></h4>
+              <h4>Mensaje: La comprensión y la conexión profunda con los demás.</h4>
+              <br>
+              <h4 class="fst-italic"><b>Susurros del corazón (Whisper of the Heart)</b></h4>
+              <h4>Mensaje: El valor de perseguir los sueños con el apoyo de los amigos.</h4>
+            </div>
+          </div>
+          <div class="acordeon-item">
+            <div class="acordeon-titulo">
+              <span class="acordeon-icono"><ion-icon name="add-circle-outline"></ion-icon></span>
+              <h4 class="display-6 fst-italic"><b>Superacion</b></h4>
+            </div>
+            <div class="acordeon-contenido">
+              <h4 class="fst-italic"><b>El viaje de Chihiro (Spirited Away)</b> </h4>
+              <h4>Mensaje: El crecimiento personal y la superación de los miedos internos.</h4>
+              <br>
+              <h4 class="fst-italic"><b>Kiki: Entregas a domicilio (Kiki's Delivery Service)</b></h4>
+              <h4>Mensaje: La importancia de enfrentar los desafíos y creer en uno mismo.</h4>
+              <br>
+              <h4 class="fst-italic">Se levanta el viento (The Wind Rises)</h5>
+                <h4><b>Mensaje: La dedicación y la perseverancia en la búsqueda de los sueños.</b></h4>
+            </div>
+          </div>
+          <div class="acordeon-item">
+            <div class="acordeon-titulo">
+              <span class="acordeon-icono"><ion-icon name="add-circle-outline"></ion-icon></span>
+              <h4 class="display-6 fst-italic"><b>Coraje</b></h4>
+            </div>
+            <div class="acordeon-contenido">
+              <h4 class="fst-italic"><b>Nausicaä del Valle del Viento (Nausicaä of the Valley of the Wind)</b> </h4>
+              <h4>Mensaje: El coraje de luchar por lo que es justo y proteger el medio ambiente.</h4>
+              <br>
+              <h4 class="fst-italic"><b>La princesa Mononoke (Princess Mononoke)</b></h4>
+              <h4>Mensaje: La valentía necesaria para buscar la paz y el equilibrio.</h4>
+              <br>
+              <h4 class="fst-italic"><b>El castillo en el cielo (Castle in the Sky)</b></h5>
+                <h4>Mensaje: La valentía en la búsqueda de la verdad y la justicia.</h4>
+            </div>
+          </div>
+        </div>
+    </section>
+    <hr />
     <div class="lugares" id="lugares">
-      <h3 class="display-5 text-center my-5 "> Lugares Tematicos </h3>
+      <h3 class="display-5 text-center my-5 "><b>Lugares Tematicos</b></h3>
       <p>
-      <h5 class="centered-justify fst-italic text-secondary">
-        El Estudio Ghibli, y especialmente las obras de Hayao Miyazaki, tienen un creciente número de fans en todo el
-        mundo. Una prueba de esto es que las entradas para el Museo Ghibli en Mitaka se agotan a las pocas horas de ser
-        liberadas. Algunas personas no saben que el museo no es el único lugar que puedes visitar si estás enamorado de
-        los personajes y las películas de Ghibli. Lugares de todo Japón han inspirado y recreado el arte de Hayao
-        Miyazaki.
-      </h5>
+        <strong>
+          <h5 class="centered-justify fst-italic text-secondary">
+            Estudio Ghibli, y especialmente las obras de Hayao Miyazaki, tienen un creciente número de fans en todo el
+            mundo. Una prueba de esto es que las entradas para el Museo Ghibli en Mitaka se agotan a las pocas horas de
+            ser
+            liberadas. Algunas personas no saben que el museo no es el único lugar que puedes visitar si estás enamorado
+            de
+            los personajes y las películas de Ghibli. Lugares de todo Japón han inspirado y recreado el arte de Hayao
+            Miyazaki.
+          </h5>
+        </strong>
       </p>
     </div>
     <section class="museo" id="museo">
@@ -390,11 +589,10 @@
           </p>
         </div>
         <div>
-          <img src="./Museo-Ghibli-Tokio.jpg" alt="Museo Ghibli Tokio " class="img-fluid mx-auto d-block">
+          <img src="./central_imag/Museo-Ghibli-Tokio.jpg" alt="Museo Ghibli Tokio " class="img-fluid mx-auto d-block">
         </div>
         <div class="centered-justify">
           <div class="text-container">
-            <p>
             <h5>
               Museo de Studio Ghibli en Mitaka, Tokio. Ubicándose dentro del Parque Inokashira, aquí los visitantes
               podrán
@@ -405,21 +603,26 @@
               dibujo, fotogramas de animación, ceniceros y cajas llenas de cortos restos de lápices -reflejando el
               respeto por el medioambiente y el deseo de reducir los residuos de Miyazaki.
             </h5>
-            </p>
-            <p>
-            <h5>
-              Si bien el museo es muy entretenido para fans adultos, es aún más divertido para los más jóvenes que
-              pueden encontrarse con el Neko Bus gigante en el área de juego diseñada exclusivamente para ellos. No
-              olvides de tomarte varias fotos para el recuerdo con el Totoro gigante ubicado fuera junto a la Avenida
-              Kichijoji, o con el imponente robot de Laputa en el techo. Cuando finalices visitando el museo y la tienda
-              de souvenirs Mamma Aiuto, dirígete al Straw Hat Café en la planta baja para tomar algún refresco. El museo
-              del Studio Ghibli es popular entre visitantes frecuentes que regresan allí porque, tanto las exhibiciones
-              especiales como los cortos animados originales reproducidos en el propio cine interior Saturn Theatre, se
-              van rotando por temporadas y son producidos exclusivamente para el museo. Por lo tanto, se recomienda
-              reservar las entradas con anticipación y dedicar suficiente tiempo para la visita al museo, ya que tiende
-              a llenarse de gente.
-            </h5>
-            </p>
+            <span class="oculto" id="oculto_texto_5">
+              <h5>
+                Si bien el museo es muy entretenido para fans adultos, es aún más divertido para los más jóvenes que
+                pueden encontrarse con el Neko Bus gigante en el área de juego diseñada exclusivamente para ellos. No
+                olvides de tomarte varias fotos para el recuerdo con el Totoro gigante ubicado fuera junto a la Avenida
+                Kichijoji, o con el imponente robot de Laputa en el techo. Cuando finalices visitando el museo y la
+                tienda
+                de souvenirs Mamma Aiuto, dirígete al Straw Hat Café en la planta baja para tomar algún refresco. El
+                museo
+                del Studio Ghibli es popular entre visitantes frecuentes que regresan allí porque, tanto las
+                exhibiciones
+                especiales como los cortos animados originales reproducidos en el propio cine interior Saturn Theatre,
+                se
+                van rotando por temporadas y son producidos exclusivamente para el museo. Por lo tanto, se recomienda
+                reservar las entradas con anticipación y dedicar suficiente tiempo para la visita al museo, ya que
+                tiende
+                a llenarse de gente.
+              </h5>
+            </span>
+            <button class=" btn  readMore_btn " id="oculto_texto_btn_5"> Ver Mas... </button>
           </div>
         </div>
       </div>
@@ -432,10 +635,9 @@
           </p>
         </div>
         <div>
-          <img src="./dogo-onsen.jpg" alt="Dogo Onsen" class="img-fluid mx-auto d-block">
+          <img src="./central_imag/dogo-onsen.jpg" alt="Dogo Onsen" class="img-fluid mx-auto d-block">
         </div>
         <div class="text-container">
-          <p>
           <h5>
             De los varios lugares que han sido de inspiración del icónico Arburaya, o la casa de baños en El Viaje de
             Chihiro, Dogo Onsen en la ciudad de Matsuyama, prefectura de Ehime, es uno de ellos. Distinguido por ser uno
@@ -446,15 +648,15 @@
             1894 y sigue prosperando al día de hoy con la multitud de turistas que acuden al lugar para darse un baño
             relajante o para experimentar la magia de Ghibli.
           </h5>
-          </p>
-          <p>
-          <h5>
-            Otros sitios que han inspirado el Arburaya en El Viaje de Chihiro incluyen el lujoso e histórico Meguro
-            Gajoen, el Museo Arquitectónico al Aire Libre Edo-Tokio, el Castillo Nijo, el Santuario Toshogu de Nikko y
-            las casas de té de Jiufen, Taiwan. Muchos otros lugares japoneses de onsen, como Sekizenkan en Shima Onsen
-            de Gunma, o Kanaguya en Shibu Onsen de Nagano, también fueron de ayuda para inspirar el diseño final.
-          </h5>
-          </p>
+          <span class="oculto" id="oculto_texto_6">
+            <h5>
+              Otros sitios que han inspirado el Arburaya en El Viaje de Chihiro incluyen el lujoso e histórico Meguro
+              Gajoen, el Museo Arquitectónico al Aire Libre Edo-Tokio, el Castillo Nijo, el Santuario Toshogu de Nikko y
+              las casas de té de Jiufen, Taiwan. Muchos otros lugares japoneses de onsen, como Sekizenkan en Shima Onsen
+              de Gunma, o Kanaguya en Shibu Onsen de Nagano, también fueron de ayuda para inspirar el diseño final.
+            </h5>
+          </span>
+          <button class=" btn  readMore_btn " id="oculto_texto_btn_6"> Ver Mas... </button>
         </div>
       </div>
     </section>
@@ -469,7 +671,7 @@
           </p>
         </div>
         <div>
-          <img src="./bosque totoro.jpg" alt="Bosque Kaminoyama" class="img-fluid mx-auto d-block">
+          <img src="./central_imag/bosque totoro.jpg" alt="Bosque Kaminoyama" class="img-fluid mx-auto d-block">
         </div>
         <div class="text-container">
           <p>
@@ -494,41 +696,56 @@
     <section class="yakushima" id="yakushima">
       <div class="centered-justify ">
         <div>
-          <p>
           <h4 class="fw-bold">
             4. Yakushima, el bosque de la "Princesa Mononoke
           </h4>
-          </p>
         </div>
         <div>
-          <img src="./YakushimaPortada_1.jpg" alt="Yakushima" class="img-fluid mx-auto d-block">
+          <img src="./central_imag/YakushimaPortada_1.jpg" alt="Yakushima" class="img-fluid mx-auto d-block">
         </div>
         <div class="text-container">
-          <p>
           <h5>
             La isla de Yakushima, zona de la prefectura de Kagoshima, al sur de Kyushu. Este lugar está cubierto por un
             frondoso bosque que,como se puede ver en las imágenes, es evidente que sirvió de inspiración al cineasta
             Hayao Miyazaki tras visitarla varias veces.
           </h5>
-          </p>
-          <p>
           <h5>
             La isla fue declarada Patrimonio de la Humanidad por la UNESCO en 1993. Además, la mayor parte de la zona se
             encuentra bajo la protección del departamento forestal para conservar su naturaleza ya que recibe una gran
             afluencia de turistas. De hecho se organizan numerosas excursiones al lugar más importante y bonito de
             Yakushima, el centro del bosque, donde se encuentra el famoso Barranco de Shiratani Unsui.
-
           </h5>
-          </p>
-
+          <br>
         </div>
+    </section>
+    <!-- AGREGANDO UN MAPA DE UBICACIONES -->
+    <section class="mapa" id="mapa">
+      <div class="centered-justify">
+        <div class="fw-bold">
+          <h4 class="display-5">
+            <b>Mapa de los Lugares Tematicos</b>
+          </h4>
+        </div>
+        <p>
+        <h4 class="centered-justify fst-italic display-6">
+          Explora los puntos en el mapa para conocer más sobre cada uno de ellos y planifica tu visita a estos
+          rincones llenos de magia y nostalgia.
+        </h4>
+        </p>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1JbQQmUppFUYrAOQ3tqEtRCiMwrP1zg8&ehbc=2E312F" width="750"
+          height="550"></iframe>
       </div>
     </section>
+
   </div>
-  < <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <script src="./readMore.js"></script>
+  <script src="./quiz.js"></script>
+  <script src="./accordion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-
+  <script type=" module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js "> </script>
+  <script nomodule src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js "> </script>
 
 </body>
 

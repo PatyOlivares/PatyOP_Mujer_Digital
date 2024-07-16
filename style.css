@@ -1,64 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&family=Varela+Round&display=swap');
 
-body{
-
-    background-image:url('./sacuras.jpg');
-    padding-top: 100px;
+/* Poniendo fondo de sacuras  */
+/*  */
+body {
+    background-image: url('./sacuras.jpg');
+    background-attachment: fixed;    /* posicion de la imagen: fija. Se mantiene inmovil aunque se haga scroll */
+    padding-top: 100px;  /* imagen que abarca la parte superior de la pagina al 100% */
 }
+
+/* Poniendo una pelicula traslucida para hacer el fondo mas transparente */
+body::before {  /* before crea un subelemento de body antes de lo puesto anteriormente */
+    content: '';  /* agrega contenido al before */
+    position: absolute; /*  Posicion del objeto*/
+    top: 0;
+    left: 0;
+    width: 100%; /* Tamaño */
+    height: 100%; /* Tamaño */
+    background: rgba(255, 255, 255, 0.5); /* Blanco semi-transparente */
+    z-index: -1; /* superposición esta detrás del contenido */
+}
+/* Estilo a la parte de texto con cita */
 figure {
     font-family: "Lobster Two", sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 20px;
 }
-.navbar {
-    background-color:   rgba(163, 96, 125,0.8);
-}
-.navbar-brand {
-    display: flex;
-    align-items: center ;
+/* Linea divisora con margen  */
+hr{
+    
+    margin: 30px;
 }
 
-.navbar-brand img {
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
+/* Ajuste al tamaño de las imagenes utilizadas en el quiz */
+#imagenes{
+    width: 600px;
+    height: 500px;
+    margin: 30px;
 }
-.navbar-brand span {
-    font-size: 25px; /* Ajusta el tamaño del texto "Studio" */
+/*  Ajuste a la tipografia de la legenda del Qizz*/
+legend{
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 500;
+    font-size: 30px
 }
-.navbar-brand {
-    font-size: 25px; /* Ajusta el tamaño del texto "Ghibli" */
-}
-
-
-#menu a {
+/* Ajuste a la tipografia de select del Qizz */
+select{
     font-family: "Lobster Two", sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 20px;
-    
-
+    font-size: 22px
 }
 
+/* Ajuste a la tipografia de las opciones del Qizz */
+select option{
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+}
+/* Margenes de la introduccion del Quizz */
+#quiz div{
+    margin: 20px;
+}
+/*  Ajuste de la tipografia de los botones de salida del Quizz*/
+input{
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px
+}
+/*  Ajuste del color de la Barra de navegacion, dandole transparencia */
+.navbar {
+    background-color:   rgba(163, 96, 125,0.8);
+}
+
+/* Ajuste del logo   */
+.navbar-brand {
+    display: flex;
+    align-items: center ;
+
+}
+/* Ajuste del tramaño  */
+.navbar-brand img {
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+    width: 180px;
+    height: 80px;
+}
+
+/* Ajuste de la tipografia del menu de la Barra de Navegacion  */
+#menu a {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+/* Ajuste de las opciones del menu cuando el cursor se encuentra en cada opcion sin darle clic  */
+/* cada que se acerca el cursor o se encuentra en la opcion esta opcion se vera de otro color   */
+#menu a:hover{
+    box-shadow: 0 0 20px 5px rgba(219, 152, 202, 0.8); /* color del borde   */
+    background-color: rgb(153, 81, 141);
+    color: black;
+    border-radius: 5%;
+}
+      
 #menu .dropdown .dropdown-menu{
     background-color: rgb(219, 171, 216,0.8);
 }
 
+/* AAjuste del color del texto que se encuentra en las opciones  */
 .nav-item .nav-link {
     color: black;
 }
-
+/* Ajuste del color del menu */
 .nav-item  .dropdown-menu .dropdown-item {
     color: rgb(7, 7, 7);
 }
 /* el maximo de nuestras imagenes en el ancho */
-
-
 .studio img{
     width: 500px;
     height: 400px;
     border-radius: 5%;
 
 }
+/* Ajuste del margen para cada parrafo de la pagina */
 p {
     margin: 15px;
 }
@@ -72,6 +140,8 @@ p {
     flex-direction: column;
     height: 100%;
 }
+
+/* Ajuste del tramaño  */
 .historia img {
     border-radius: 5%;
     width: 500px;
@@ -79,6 +149,7 @@ p {
 
 
 }
+/* Ajuste del texto e imagenes que se encuentren en la clase container */
 .container {
     margin: 20px;
     text-align: justify;
@@ -88,21 +159,114 @@ p {
     flex-direction: column;
     height: 100%;
 }
+/* Ajuste del tramaño  */
 .container img {
     width: 450px;
     height: 350px;
     border-radius: 5%;
 }
+/* Ajuste del tramaño  */
 h5{
     margin: 20px;
     text-align: justify;
     display: flex;
     
 }
-
+/* Ajuste del tramaño  */
 .museo img {
     width: 800px;
     height: 500px;
 
 }
 
+
+/* BOTONES DE VER MAS */
+/* Ajuste de tamaño, color y resaltamiento de los botones para que se vean mas */
+.readMore_btn {
+    background-color: rgb(183, 136, 226);
+    border: none;
+    border-radius: 40px;
+    color: black;
+    padding: 15px 30px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 0px rgb(141, 85, 194);
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+/* HOVER Ayuda a interactuar cuando el cursor esta en el elemento  */
+.readMore_btn:hover{
+    box-shadow: 0 0 20px 5px rgba(141, 85, 194, 0.8);
+    background-color: rgb(123, 82, 136);
+    color: black;
+}
+
+/* ::active representa el elemento como el boton que el usuario esta activando el boton   */
+.readMore_btn:active {
+    box-shadow: 0 0 40px 15px rgba(141, 85, 194, 0.9);
+}
+
+/* Ayuda a activar el color del boton cuando el usuario esta en el, esto se uso para las pantallas pequeñas */
+@media (hover: none) and (pointer: coarse) {
+    .readMore_btn {
+        box-shadow: 0 0 30px 10px rgba(183, 136, 226, 0.8);
+    }
+
+    .readMore_btn:active {
+        box-shadow: 0 0 40px 15px rgba(141, 85, 194, 0.9);
+    }
+}
+
+/* Ocultar el texto que se encuentra en span para usar el boton de Ver Mas*/
+.oculto{
+    display: none;
+}
+/* Activa el texto que se encontraba oculto en span */
+.show{
+    display: block;
+}
+
+
+/* Estilo del ACORDEON de RECOMENDACIONES DE PELICULAS */
+
+/* dando estilo al acordeon*/
+/* dando margen y tamaño de la letra*/
+.recomendaciones {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  /* dando estilo a la caja que encierra cada recomendacion, dandole un relleno blanco con transparencia, margen , radio, etc..*/
+  .recomendaciones .acordeon .acordeon-item {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    margin-bottom: 10px;
+  }
+
+  /* Ajustando y centrando el titulo  y del icono del acordeon para que el icono se encuentre al lado del titulo*/
+  .recomendaciones .acordeon .acordeon-item .acordeon-titulo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  /* Ajustando el tamaño del Icono  */
+  .recomendaciones .acordeon .acordeon-item .acordeon-titulo .acordeon-icono ion-icon {
+    margin-right: 20px;
+    font-size: 30px;
+    transition: 0.4s;
+  }
+
+  /* AJUSTES PARA OCULTAR Y MOSTRAR EL CONTENIDO DE CADA RECOMENDACION*/
+/* */
+  .recomendaciones .acordeon .acordeon-item .acordeon-contenido {
+    max-height: 0;
+    overflow: hidden; /* recorta el contenido que sale de la caja de reocmendacion*/
+    transition: max-height 0.5s ease;
+  }
+  /* Muestra ek contenido recortado*/
+  .recomendaciones .acordeon .acordeon-item .acordeon-contenido.show_1 {
+    max-height: 1000px; /* Puede ajustarse esto según sea necesario */
+  }
