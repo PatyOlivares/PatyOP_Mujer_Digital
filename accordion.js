@@ -7,11 +7,17 @@ const itemsAcordeon = document.querySelectorAll('.acordeon-item');
 itemsAcordeon.forEach(item => {
     const titulo = item.querySelector('.acordeon-titulo');
     const contenido = item.querySelector('.acordeon-contenido');
-    const icono =item.querySelector('ion-icon');
+    const icono =item.querySelector('.acordeon-icono i');
 
     //creando el evento que al hacer click, cambien la clase de los elementos del contenido y el icono para mostrar y ocultar
     titulo.addEventListener('click', ()=> {
         contenido.classList.toggle('show_1');
-        icono.name = contenido.classList.contains('show_1') ? 'remove-circle-outline' : 'add-circle-outline';
+        if (icono.classList.contains('bi-caret-down-square')) {
+            icono.classList.remove('bi-caret-down-square');
+            icono.classList.add('bi-caret-up-square');
+          } else {
+            icono.classList.remove('bi-caret-up-square');
+            icono.classList.add('bi-caret-down-square');}
+        // icono.name = contenido.classList.contains('show_1') ? 'bi bi-caret-down-square' : 'bi bi-caret-up-square';
     })
 })

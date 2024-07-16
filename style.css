@@ -253,9 +253,9 @@ h5{
     cursor: pointer;
   }
   /* Ajustando el tamaño del Icono  */
-  .recomendaciones .acordeon .acordeon-item .acordeon-titulo .acordeon-icono ion-icon {
+  .recomendaciones .acordeon .acordeon-item .acordeon-titulo .acordeon-icono  i {
     margin-right: 20px;
-    font-size: 30px;
+    font-size: 25px;
     transition: 0.4s;
   }
 
