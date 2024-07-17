@@ -74,6 +74,7 @@ input{
 /*  Ajuste del color de la Barra de navegacion, dandole transparencia */
 .navbar {
     background-color:   rgba(163, 96, 125,0.8);
+    display: flex;
 }
 
 /* Ajuste del logo   */
@@ -132,7 +133,7 @@ p {
 }
 /*alinear el texto */
 .centered-justify {
-    margin: 20px;
+    margin: 10px;
     text-align: justify;
     display: flex;
     justify-content: center;
@@ -151,7 +152,7 @@ p {
 }
 /* Ajuste del texto e imagenes que se encuentren en la clase container */
 .container {
-    margin: 20px;
+    margin: 10px;
     text-align: justify;
     display: flex;
     justify-content: center;
@@ -170,6 +171,7 @@ h5{
     margin: 20px;
     text-align: justify;
     display: flex;
+    
     
 }
 /* Ajuste del tramaño  */
@@ -270,3 +272,4 @@ h5{
   .recomendaciones .acordeon .acordeon-item .acordeon-contenido.show_1 {
     max-height: 1000px; /* Puede ajustarse esto según sea necesario */
   }
+
